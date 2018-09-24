@@ -1,2 +1,0 @@
-# rockulator
-The Rock Calculator
