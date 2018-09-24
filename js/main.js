@@ -18,7 +18,7 @@ addSum.innerHTML = display(one+two);
 function display(number){
 	if(number>10000){
 		img.className = "animated-gif";
-		return "wow, that's a lot!";
+		return "hey... that's a pretty big number";
 	}
 	else if (number<10){
 		return "not very much";
