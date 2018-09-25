@@ -12,7 +12,7 @@ function add() {
 
 var one = parseFloat(numOne.value) || 0;
 var two = parseFloat(numTwo.value) || 0;
-var passedString = (numOne.value + numTwo.value);
+var passedString = (numOne.value + numTwo.value) || 0;
 var myString = passedString.toLowerCase();
 
 rock.className = "hide";
@@ -34,7 +34,7 @@ function display(number){
 function trumpcheck(text){
 	if(text.includes("trump")){
 		toad.className = "animated-gif";
-		return "yeti pubes and a dick like the mushroom character from mario kart...";
+		return text;
 	}
  	else{
  		toad.className = "hide";
