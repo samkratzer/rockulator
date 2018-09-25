@@ -31,7 +31,7 @@ function display(number){
 }
 	  
 function trumpcheck(text){
-	if(text.contains("trump")){
+	if(text.includes("trump")){
 		toad.className = "animated-gif";
 		return text;
 	}
