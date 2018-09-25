@@ -12,7 +12,8 @@ function add() {
 
 var one = parseFloat(numOne.value) || 0;
 var two = parseFloat(numTwo.value) || 0;
-var myString = (numOne.value + numTwo.value).toLowerCase;
+var passedString = (numOne.value + numTwo.value) || 0;
+var myString = passedString.toLowerCase();
 
 rock.className = "hide"
 addSum.innerHTML = display(one+two);
