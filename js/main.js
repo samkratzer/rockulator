@@ -21,18 +21,15 @@ addSum.innerHTML = display(one+two, myString);
 stringDisplay.innnerHTML = trumpcheck(myString);
 }
 
-function display(number, text){
-	if(number>10000 && (text.includes("trump") == false) {
+function display(number){
+	if(number>10000) {
 		rock.className = "animated-gif";
 		return "hey... that's a pretty big number";
 	}
-	else if (number<10 && (text.includes("trump") == false) {
+	else if (number<10) {
 		return "not very much";
 	}
-	else if (text.includes("trump") == false) {
-		return "your number is: " + number;
-	}
-	else return null;
+	else return "your number is: " + number;
 }
 	  
 function trumpcheck(text){
