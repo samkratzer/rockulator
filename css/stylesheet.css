@@ -16,6 +16,20 @@ img.animated-gif{
 	display: none;
 }
 
+<<<<<<< HEAD
 .textbox{
 	size: 35px;
 }
+=======
+#num-one
+{
+    height:200px;
+    font-size:14pt;
+}
+
+#num-two
+{
+    height:200px;
+    font-size:14pt;
+}
+>>>>>>> 025b0b9d0a9e4d7a8068b40440ec3fbcbabe82cc
