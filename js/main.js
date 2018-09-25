@@ -47,7 +47,7 @@ function trumpcheck(text){
 function zoomin(){
 	var currWidth = toad.clientWidth;
 	document.getElementById("the-rock").className = "hide";
-	document.getElementById("add-sum") = "oh boy...";
+	document.getElementById("add-sum").innerHTML = "oh boy...";
 	if (currWidth >= 1750){
 		alert("Maximum mushroom already reached!");
 	}
