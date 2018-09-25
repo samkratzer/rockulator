@@ -45,7 +45,6 @@ function trumpcheck(text){
  }
 
 function zoomin(){
-	alert("you clicked on trump's mushroom dick");
 	var currWidth = toad.clientWidth;
 	document.getElementById("the-rock").className = "hide";
 	document.getElementById("add-sum") = "oh boy...";
