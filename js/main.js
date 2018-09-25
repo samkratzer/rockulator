@@ -15,31 +15,30 @@ var two = parseFloat(numTwo.value) || 0;
 var passedString = (numOne.value + numTwo.value) || 0;
 var myString = passedString.toLowerCase();
 
-rock.className = "hide"
-addSum.innerHTML = display(one+two);
+toad.className = "hide";
+rock.className = "hide";
+addSum.innerHTML = display(one+two, myString);
 stringDisplay.innnerHTML = trumpcheck(myString);
 }
 
-function display(number){
-	if(number>10000){
+function display(number, text){
+	if(number>10000 && (text.includes("trump") == false) {
 		rock.className = "animated-gif";
 		return "hey... that's a pretty big number";
 	}
-	else if (number<10){
+	else if (number<10 && (text.includes("trump") == false) {
 		return "not very much";
 	}
-	else return "your number is: " + number;
+	else if (text.includes("trump") == false) {
+		return "your number is: " + number;
+	}
+	else return null;
 }
 	  
 function trumpcheck(text){
 	if(text.includes("trump")){
 		toad.className = "animated-gif";
-		rock.className = "hide";
-		addSum.innerHTML = "'yeti pubes and a dick like the mushroom character on mario kart...'";
-		return text;
+		return "yeti pubes and a dick like the mushroom character from mario kart...";
 	}
-	else{
-		toad.className = "hide";
-		return text;
-	}
+	else return null;
 }
