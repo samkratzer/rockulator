@@ -45,6 +45,8 @@ function trumpcheck(text){
  }
 
 function zoomin(){
+	alert("you clicked on trump's dick");
+	<!--
 	var currWidth = toad.clientWidth;
 	document.getElementById("the-rock").className = "hide";
 	if (currWidth >= 1750){
@@ -53,5 +55,6 @@ function zoomin(){
 	else{
         	toad.style.width = (currWidth - 50) + "px";
         }
+	-->
 }
 	
