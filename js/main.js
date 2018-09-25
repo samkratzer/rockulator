@@ -49,10 +49,11 @@ function zoomin(){
 	document.getElementById("the-rock").className = "hide";
 	document.getElementById("add-sum") = "oh boy...";
 	if (currWidth >= 1750){
-		alert("Maximum mushroom reached!");
+		alert("Maximum mushroom already reached!");
 	}
 	else{
         	toad.style.width = (currWidth + 50) + "px";
+		alert("careful, when you touch his mushroom dick, it gets bigger!");
         }
 	
 }
