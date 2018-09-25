@@ -12,6 +12,12 @@ img.animated-gif{
 	align-content: center;
 }
 
+img.big-splash{
+	width: 780px;
+	height: auto;
+	align-content: center;
+}
+
 .hide{
 	display: none;
 }
