@@ -34,7 +34,7 @@ function display(number){
 	  
 function trumpcheck(text){
 	if(text.includes("trump")){
-		toad.className = "animated-gif";
+		toad.className = "big-splash";
 		rock.className = "hide";
 		return text;
 	}
@@ -46,6 +46,7 @@ function trumpcheck(text){
 
 function zoomin(){
 	var currWidth = toad.clientWidth;
+	document.getElementById("the-rock").className = "hide";
 	if (currWidth >= 1750){
 		alert("Maximum mushroom reached!");
 	}
