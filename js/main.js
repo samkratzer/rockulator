@@ -35,6 +35,7 @@ function display(number){
 function trumpcheck(text){
 	if(text.includes("trump")){
 		toad.className = "animated-gif";
+		rock.className = "hide";
 		return text;
 	}
  	else{
