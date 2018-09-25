@@ -17,6 +17,7 @@ img.animated-gif{
 }
 
 .textbox{
-	height: 200px !important;
+	height: 30px !important;
+	width: 200px;
 	text-size: 18;
 }
