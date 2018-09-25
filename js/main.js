@@ -1,6 +1,7 @@
 var numOne = document.getElementById("num-one");
 var numTwo = document.getElementById("num-two");
 var addSum = document.getElementById("add-sum");
+var stringDisplay = document.getElementById("string-display");
 var rock = document.getElementById("the-rock");
 var toad = document.getElementById("toad");
 
@@ -12,6 +13,7 @@ function add() {
 var one = parseFloat(numOne.value) || 0;
 var two = parseFloat(numTwo.value) || 0;
 var string = (numOne.value + numTwo.value).toLowerCase;
+stringDisplay.innnerHTML = string;
 
 	if(string.contains("trump"){
 	   toad.className = "animated-gif";
