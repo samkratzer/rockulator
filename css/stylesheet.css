@@ -15,3 +15,9 @@ img.animated-gif{
 .hide{
 	display: none;
 }
+
+#textboxid
+{
+    height:200px;
+    font-size:14pt;
+}
