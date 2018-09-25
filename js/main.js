@@ -30,13 +30,13 @@ function display(number){
 	else return "your number is: " + number;
 }
 	  
-function trumpcheck(string){
-	if(string.contains("trump")){
+function trumpcheck(text){
+	if(text.contains("trump")){
 		toad.className = "animated-gif";
-		return string;
+		return text;
 	}
 	else{
 		toad.className = "hide";
-		return string;
+		return text;
 	}
 }
