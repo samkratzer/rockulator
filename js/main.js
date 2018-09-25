@@ -7,6 +7,7 @@ var toad = document.getElementById("toad");
 
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
+toad.addEventListener("click", zoomin);
 
 function add() {
 
@@ -41,3 +42,14 @@ function trumpcheck(text){
  		return text;
  	}
  }
+
+function zoomin(){
+	var currWidth = toad.clientWidth;
+	if (currWidth >= 1750){
+		alert("Maximum mushroom reached!");
+	}
+	else{
+        	toad.style.width = (currWidth - 50) + "px";
+        }
+}
+	
