@@ -14,8 +14,7 @@ var one = parseFloat(numOne.value) || 0;
 var two = parseFloat(numTwo.value) || 0;
 var myString = (numOne.value + numTwo.value).toLowerCase;
 
-toad.className = "hide";
-rock.className = "hide";
+rock.className = "hide"
 addSum.innerHTML = display(one+two);
 stringDisplay.innnerHTML = trumpcheck(myString);
 }
@@ -33,11 +32,11 @@ function display(number){
 	  
 function trumpcheck(text){
 	if(text.includes("trump")){
-		toad.className = "big-splash";
+		toad.className = "animated-gif";
 		return "yeti pubes and a dick like the mushroom character from mario kart...";
 	}
  	else{
  		toad.className = "hide";
- 		return text;
+ 		return " ";
  	}
  }
