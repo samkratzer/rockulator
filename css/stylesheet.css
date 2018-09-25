@@ -16,7 +16,13 @@ img.animated-gif{
 	display: none;
 }
 
-#textboxid
+#num-one
+{
+    height:200px;
+    font-size:14pt;
+}
+
+#num-two
 {
     height:200px;
     font-size:14pt;
