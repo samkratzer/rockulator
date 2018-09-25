@@ -15,7 +15,7 @@ var two = parseFloat(numTwo.value) || 0;
 var passedString = (numOne.value + numTwo.value) || 0;
 var myString = passedString.toLowerCase();
 
-rock.className = "hide"
+rock.className = "hide";
 addSum.innerHTML = display(one+two);
 stringDisplay.innnerHTML = trumpcheck(myString);
 }
