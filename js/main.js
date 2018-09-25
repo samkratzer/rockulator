@@ -34,6 +34,8 @@ function display(number){
 function trumpcheck(text){
 	if(text.includes("trump")){
 		toad.className = "animated-gif";
+		rock.className = "hide";
+		addSum.innerHTML = "'yeti pubes and a dick like the mushroom character on mario kart...'";
 		return text;
 	}
 	else{
