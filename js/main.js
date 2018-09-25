@@ -12,16 +12,11 @@ function add() {
 
 var one = parseFloat(numOne.value) || 0;
 var two = parseFloat(numTwo.value) || 0;
-var string = (numOne.value + numTwo.value).toLowerCase;
-stringDisplay.innnerHTML = string;
-
-	if(string.contains("trump"){
-	   toad.className = "animated-gif";
-	   }
-	else toad.className = "hide";
+var myString = (numOne.value + numTwo.value).toLowerCase;
 
 rock.className = "hide"
 addSum.innerHTML = display(one+two);
+stringDisplay.innnerHTML = trumpcheck(myString);
 }
 
 function display(number){
@@ -34,4 +29,14 @@ function display(number){
 	}
 	else return "your number is: " + number;
 }
-	   
+	  
+function trumpcheck(string){
+	if(string.contains("trump")){
+		toad.className = "animated-gif";
+		return string;
+	}
+	else{
+		toad.className = "hide";
+		return string;
+	}
+}
