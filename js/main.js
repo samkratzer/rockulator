@@ -1,10 +1,14 @@
+var heading = document.getElementById("heading");
+var tagline = document.getElementById("tagline");
+var numberFields = document.getElementById("number-fields");
 var numOne = document.getElementById("num-one");
 var numTwo = document.getElementById("num-two");
 var addSum = document.getElementById("add-sum");
 var stringDisplay = document.getElementById("string-display");
 var rock = document.getElementById("the-rock");
 var toad = document.getElementById("toad");
-var i = 0;
+var button = document.getElementById("finish-job");
+var explosion = document.getElementById("explosion");
 
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
@@ -47,14 +51,23 @@ function trumpcheck(text){
 
 function zoomin(){
 	var currWidth = toad.clientWidth;
-	document.getElementById("the-rock").className = "hide";
-	document.getElementById("add-sum").innerHTML = "oh boy... when you touch the mushroom, it grows!";
+	rock.className = "hide";
+	addSum.innerHTML = "oh boy... when you touch the mushroom, it grows!";
 	if (currWidth > 1000){
-		alert("Maximum mushroom already reached!");
+		button.className = "textbox";
 	}	
 	else{
         	toad.style.width = (currWidth + 150) + "px";
         }
-	
+}
+
+function explode(){
+	rock.className = "hide";
+	toad.className = "hide";
+	heading.className = "hide";
+	tagline.className = "hide";
+	number-fields.className = "hide";
+	button.className = "hide";
+	explosion.className = "big-splash";
 }
 	
