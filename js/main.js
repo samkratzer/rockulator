@@ -46,13 +46,19 @@ function trumpcheck(text){
 
 function zoomin(){
 	var currWidth = toad.clientWidth;
+	var i = 0
 	document.getElementById("the-rock").className = "hide";
 	document.getElementById("add-sum").innerHTML = "oh boy... when you touch the mushroom, it grows!";
-	if (currWidth >= 1450){
+	if (i > 4){
 		alert("Maximum mushroom already reached!");
 	}
+	else if (i = 4){
+		document.getElementById("add-sum").innerHTML = "Maximum mushroom already reached!");
+		i++;
+	}	
 	else{
-        	toad.style.width = (currWidth + 50) + "px";
+        	toad.style.width = (currWidth + 150) + "px";
+		i++;
         }
 	
 }
