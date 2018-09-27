@@ -14,6 +14,8 @@ img.animated-gif{
 
 img.big-splash{
 	align-content: center;
+	width: 600px;
+	height: auto;
 }
 
 .hide{
