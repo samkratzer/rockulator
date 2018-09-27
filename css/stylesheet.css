@@ -24,6 +24,6 @@ img.big-splash{
 
 .textbox{
 	height: 30px !important;
-	width: 200px;
+	width: auto;
 	font-size: 25px;
 }
