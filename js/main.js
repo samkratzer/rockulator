@@ -65,6 +65,7 @@ function explode(){
 	document.getElementById("heading").className = "hide";
 	document.getElementById("tagline").className = "hide";
 	document.getElementById("number-fields").className = "hide";
+	addSum.className = "hide";
 	button.className = "hide";
 	explosion.className = "big-splash";
 }
