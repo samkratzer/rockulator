@@ -52,7 +52,7 @@ function zoomin(){
 	rock.className = "hide";
 	addSum.innerHTML = "oh boy... when you touch the mushroom, it grows!";
 	if (currWidth > 1000){
-		button.className = "textbox";
+		button.className = "button";
 	}	
 	else{
         	toad.style.width = (currWidth + 150) + "px";
