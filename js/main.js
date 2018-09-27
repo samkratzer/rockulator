@@ -4,6 +4,7 @@ var addSum = document.getElementById("add-sum");
 var stringDisplay = document.getElementById("string-display");
 var rock = document.getElementById("the-rock");
 var toad = document.getElementById("toad");
+var i = 0;
 
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
@@ -46,7 +47,6 @@ function trumpcheck(text){
 
 function zoomin(){
 	var currWidth = toad.clientWidth;
-	var i = 0
 	document.getElementById("the-rock").className = "hide";
 	document.getElementById("add-sum").innerHTML = "oh boy... when you touch the mushroom, it grows!";
 	if (i > 4){
