@@ -1,6 +1,3 @@
-var heading = document.getElementById("heading");
-var tagline = document.getElementById("tagline");
-var numberFields = document.getElementById("number-fields");
 var numOne = document.getElementById("num-one");
 var numTwo = document.getElementById("num-two");
 var addSum = document.getElementById("add-sum");
@@ -13,6 +10,7 @@ var explosion = document.getElementById("explosion");
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
 toad.addEventListener("click", zoomin);
+button.addEventListener("click", explode);
 
 function add() {
 
@@ -39,8 +37,8 @@ function display(number){
 	  
 function trumpcheck(text){
 	if(text.includes("trump")){
-		toad.className = "big-splash";
-		rock.className = "hide";
+		document.getElementById("toad").className = "big-splash";
+		document.getElementById("rock").className = "hide";
 		return text;
 	}
  	else{
@@ -64,9 +62,9 @@ function zoomin(){
 function explode(){
 	rock.className = "hide";
 	toad.className = "hide";
-	heading.className = "hide";
-	tagline.className = "hide";
-	number-fields.className = "hide";
+	document.getElementById("heading").className = "hide";
+	document.getElementById("tagline").className = "hide";
+	document.getElementById("number-fields").className = "hide";
 	button.className = "hide";
 	explosion.className = "big-splash";
 }
