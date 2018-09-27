@@ -49,16 +49,11 @@ function zoomin(){
 	var currWidth = toad.clientWidth;
 	document.getElementById("the-rock").className = "hide";
 	document.getElementById("add-sum").innerHTML = "oh boy... when you touch the mushroom, it grows!";
-	if (i > 4){
+	if (currWidth < 1300){
 		alert("Maximum mushroom already reached!");
-	}
-	else if (i = 4){
-		document.getElementById("add-sum").innerHTML = "Maximum mushroom already reached!");
-		i++;
 	}	
 	else{
         	toad.style.width = (currWidth + 150) + "px";
-		i++;
         }
 	
 }
