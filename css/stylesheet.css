@@ -34,3 +34,11 @@ img.big-splash{
 	font-size: 25px;
 	font-weight: bold;
 }
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
