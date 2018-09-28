@@ -11,8 +11,6 @@ var reset = document.getElementById("reset");
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
 toad.addEventListener("click", zoomin);
-button.addEventListener("click", explode);
-reset.addEventListener("click", document.page.reload(true));
 
 function add() {
 
@@ -75,4 +73,8 @@ function explode(){
 	button.className = "hide";
 	explosion.className = "big-splash";
 	reset.className = "button";
+}
+
+function reset(){
+	location.reload();
 }
