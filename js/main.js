@@ -27,7 +27,10 @@ stringDisplay.innnerHTML = trumpcheck(myString);
 }
 
 function display(number){
-	if(number>10000){
+	if((parseFloat(numOne.value) || 0) == 0 && (parseFloat(numTwo.value) || 0) == 0){
+		return " ";
+	}
+	else if(number>10000){
 	rock.className = "animated-gif";
  		return "hey... that's a pretty big number";
  	}
