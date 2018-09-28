@@ -37,12 +37,13 @@ function display(number){
 	  
 function trumpcheck(text){
 	if(text.includes("trump")){
-		document.getElementById("toad").className = "big-splash";
-		document.getElementById("rock").className = "hide";
+		toad.className = "big-splash";
+		rock.className = "hide";
 		return text;
 	}
  	else{
  		toad.className = "hide";
+ 		button.className = "hide";
  		return text;
  	}
  }
