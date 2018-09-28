@@ -6,11 +6,13 @@ var rock = document.getElementById("the-rock");
 var toad = document.getElementById("toad");
 var button = document.getElementById("finish-job");
 var explosion = document.getElementById("explosion");
+var reset = document.getElementById("reset");
 
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
 toad.addEventListener("click", zoomin);
 button.addEventListener("click", explode);
+reset.addEventListener("click", reset);
 
 function add() {
 
@@ -71,3 +73,6 @@ function explode(){
 	explosion.className = "big-splash";
 }
 	
+function reset(){
+	document.page.reload();
+}
