@@ -74,6 +74,7 @@ function explode(){
 	addSum.className = "hide";
 	button.className = "hide";
 	explosion.className = "big-splash";
+	reset.className = "button";
 }
 	
 function reset(){
