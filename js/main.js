@@ -21,6 +21,7 @@ var passedString = (numOne.value + numTwo.value) || 0;
 var myString = passedString.toLowerCase();
 
 rock.className = "hide";
+nineThousand.className = "hide";
 addSum.innerHTML = display(one+two);
 stringDisplay.innnerHTML = trumpcheck(myString);
 }
@@ -49,6 +50,7 @@ function trumpcheck(text){
 	if(text.includes("trump")){
 		toad.className = "big-splash";
 		rock.className = "hide";
+		nineThousand.className = "hide";
 		return text;
 	}
  	else{
@@ -73,6 +75,7 @@ function zoomin(){
 function explode(){
 	rock.className = "hide";
 	toad.className = "hide";
+	nineThousand.className = "hide";
 	document.getElementById("heading").className = "hide";
 	document.getElementById("tagline").className = "hide";
 	document.getElementById("number-fields").className = "hide";
