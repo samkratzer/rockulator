@@ -76,5 +76,5 @@ function explode(){
 }
 
 function reset(){
-	location.reload();
+	window.location.reload(true);
 }
