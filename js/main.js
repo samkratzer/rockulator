@@ -7,6 +7,7 @@ var toad = document.getElementById("toad");
 var button = document.getElementById("finish-job");
 var explosion = document.getElementById("explosion");
 var reset = document.getElementById("reset");
+var nineThousand = document.getElementById("nine-thousand");
 
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
@@ -20,6 +21,7 @@ var passedString = (numOne.value + numTwo.value) || 0;
 var myString = passedString.toLowerCase();
 
 rock.className = "hide";
+nineThousand.className = "hide";
 addSum.innerHTML = display(one+two);
 stringDisplay.innnerHTML = trumpcheck(myString);
 }
@@ -33,6 +35,7 @@ function display(number){
 	}
 	else if(number == 9001){
 		return "IT'S OVER 9000!!!!!";
+		nineThousand.className = "animated-gif";
 	}
 	else if(number>10000){
 		rock.className = "animated-gif";
