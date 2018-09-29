@@ -33,6 +33,7 @@ function display(number){
 	}
 	else if(number == 9001){
 		return "IT'S OVER 9000!!!!!";
+	}
 	else if(number>10000){
 		rock.className = "animated-gif";
  		return "hey... that's a pretty big number";
