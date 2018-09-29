@@ -31,6 +31,8 @@ function display(number){
 	else if(number == 1){
 		return "one is loneliest number that you'll ever do...";
 	}
+	else if(number == 9001){
+		return "IT'S OVER 9000!!!!!";
 	else if(number>10000){
 		rock.className = "animated-gif";
  		return "hey... that's a pretty big number";
