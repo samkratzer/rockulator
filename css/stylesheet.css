@@ -1,6 +1,8 @@
+@import url(font-awesome.min.css);
+
 body{
 	background-color: #f4f4f4;
-	font-family: "helvetica neue";
+	font-family: FontAwesome;
 	color: #666;
 	padding: 0 20%;
 	text-align: center;
