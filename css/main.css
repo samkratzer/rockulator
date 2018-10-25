@@ -87,6 +87,38 @@ input, select, textarea {
   -ms-appearance: none;
   appearance: none; }
 
+/* CUSTOM STUFF */
+
+img.animated-gif{
+	width: 500px;
+	height: auto;
+	align-content: center;
+}
+
+img.big-splash{
+	align-content: center;
+	width: 600px;
+	height: auto;
+}
+
+.hide{
+	display: none;
+}
+
+.textbox{
+	height: 30px !important;
+	width: 200px;
+	font-size: 25px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
 /* Typography */
 html {
   font-size: 13pt; }
