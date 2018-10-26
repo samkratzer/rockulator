@@ -1,4 +1,3 @@
-<script>
 function startTime() {
     var today = new Date();
     var month = today.getMonth();
@@ -41,5 +40,3 @@ function checkDST() {
 	if(today > nov3 && today < mar10) return 0;
 	else return 1;
 }
-
-</script>
