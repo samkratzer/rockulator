@@ -3,18 +3,22 @@ function startTime() {
     	var month = today.getMonth();
 	var date = today.getDate();
 	var dst = checkDST();
+	var h = today.getUTCHours();
  	var hAz = today.getUTCHours()-7;
  	var hCt = today.getUTCHours()-6+dst;
  	var m = today.getUTCMinutes();
  	var s = today.getUTCSeconds();
  	var twelvehourAz = checkTwelve(hAz);
  	var twelvehourCt = checkTwelve(hCt);
+	var twelvehourUTC = checkTwelve(h);
  	hAz = modifyHours(hAz);
  	hCt = modifyHours(hCt);
+	h = modifyHours(h);
  	m = checkTime(m);
  	s = checkTime(s);
 	document.getElementById('Arizona').innerHTML = "Arizona: " + hAz + ":" + m + ":" + s + " "  + twelvehourAz;
 	document.getElementById('Central').innerHTML = "Central: " + hCt + ":" + m + ":" + s + " "  + twelvehourCt;
+	document.getElementById('UTC').innerHTML = "UTC: " + h + ": + m + ":" + s + " " + twelvehourUTC;
     	var t = setTimeout(startTime, 500);
 }
 
