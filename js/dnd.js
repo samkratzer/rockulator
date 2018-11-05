@@ -24,12 +24,13 @@ function checkTime(i) {
 }
 
 function checkTwelve(i) {
-	if (i > 12) return "PM";
+	if (i > 12 || i < 0) return "PM";
     	else return "AM";
 }
 
 function modifyHours(i) {
 	if (i > 12) {i = i-12};
+    if (i < 0) {i = i+12};
     	return i;
 }
 
