@@ -18,7 +18,7 @@ function startTime() {
  	s = checkTime(s);
 	document.getElementById('Arizona').innerHTML = "Arizona: " + hAz + ":" + m + ":" + s + " "  + twelvehourAz;
 	document.getElementById('Central').innerHTML = "Central: " + hCt + ":" + m + ":" + s + " "  + twelvehourCt;
-	document.getElementById('UTC').innerHTML = "UTC: " + h + ": + m + ":" + s + " " + twelvehourUTC;
+	document.getElementById('UTC').innerHTML = "UTC: " + h + ": + m + ":" + s + " " + twelvehourUTC; 
     	var t = setTimeout(startTime, 500);
 }
 
