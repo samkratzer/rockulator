@@ -30,7 +30,7 @@ function checkTwelve(i) {
 
 function modifyHours(i) {
 	if (i > 12) {i = i-12};
-    if (i < 0) {i = i+12};
+	if (i < 0) {i = i+12};
     	return i;
 }
 
