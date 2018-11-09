@@ -56,6 +56,7 @@ function addCows(number){
 	for (i=0; i<number; i++){
 		var elem = document.createElement("img");
 		elem.src = "media/cow-clipart-cow-clip-art-2.png";
+		elem.className = "cow-icon";
 		document.getElementById("cows").appendChild(elem);
 	}
 	console.log("added cows");
