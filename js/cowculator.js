@@ -5,7 +5,7 @@ var addSum = document.getElementById("add-sum");
 var textField = document.getElementById("text-field");
 var url = "https://www.quandl.com/api/v3/datasets/ODA/PBEEF_USD/data.json?start_date=2017-01-01&column_index=1&collapse=annual&api_key=3xiT8B9xhdJEmqJLwTM_";
 var request = new XMLHttpRequest();
-var cattlePrice = 100;
+var cattlePrice = 0;
 
 //Start listening for any changes in the number input fields, and run the "add" function every time a change occurs
 numOne.addEventListener("input", add);
