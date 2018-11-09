@@ -47,8 +47,9 @@ img.big-splash{
 }
 
 .cowcontainer{
-	width: 500px;
+	width: 700px !important;
 	height: auto;
+	align-content: center;
 }
 
 /* Add a black background color to the top navigation */
