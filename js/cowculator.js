@@ -13,8 +13,8 @@ request.open("GET", url, true);
 request.onload = function() {
 	//Begin accessing JSON data here
 	var data = JSON.parse(this.response).dataset_data.data[0];
-	console.log(data[1]);
 	cattlePrice = data[1];
+    	console.log(cattlePrice);
 }
 request.send();
 
@@ -26,10 +26,10 @@ function add() {
 
 function display(number){
 	var value = Math.round(number/cattlePrice);
+
 	if((parseFloat(numOne.value) || 0) == 0 && (parseFloat(numTwo.value) || 0) == 0){
 		return " ";
 	}
- 	else return 
-	("The current market value of cattle per head is $" + cattlePrice + 
+ 	else return ("The current market value of cattle per head is $" + cattlePrice + 
 	". Your value, " + number + ", is worth about " + value + " head(s) of cattle.");
 }
