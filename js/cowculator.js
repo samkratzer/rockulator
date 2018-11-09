@@ -22,3 +22,14 @@ function display(number){
 	("The current market value of cattle per head is $" + cattlePrice + 
 	". Your value, " + number + ", is worth about " + value + " head(s) of cattle.");
 }
+
+function getPrice(){
+	fetch(https://www.quandl.com/api/v3/datasets/ODA/PBEEF_USD.json?api_key=3xiT8B9xhdJEmqJLwTM_)
+ 		.then(function(data) {
+    		// Here you get the data to modify as you please
+    		})
+ 		})
+		.catch(function(error) {
+ 	   	// If there is any error you will catch them here
+ 	});   
+	return value;
