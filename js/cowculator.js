@@ -10,6 +10,7 @@ numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
 
 request.open("GET", url, true);
+request.onload = function() {
 	//Begin accessing JSON data here
 	var data = JSON.parse(this.response).dataset_data.data[0];
 	console.log(data[1]);
@@ -32,14 +33,3 @@ function display(number){
 	("The current market value of cattle per head is $" + cattlePrice + 
 	". Your value, " + number + ", is worth about " + value + " head(s) of cattle.");
 }
-
-function getPrice(){
-	fetch("https://www.quandl.com/api/v3/datasets/ODA/PBEEF_USD/data.json?start_date=2016-01-01&column_index=1&collapse=annual&api_key=3xiT8B9xhdJEmqJLwTM_")
- 		.then(function(data) {
-    		// Here you get the data to modify as you please
-    		})
- 		})
-		.catch(function(error) {
- 	   	// If there is any error you will catch them here
- 	});   
-	return value;
