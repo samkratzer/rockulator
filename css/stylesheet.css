@@ -25,6 +25,11 @@ img.big-splash{
 	height: auto;
 }
 
+img.cow-icon{
+	height: 50px;
+	width: auto;
+}
+
 .hide{
 	display: none;
 }
