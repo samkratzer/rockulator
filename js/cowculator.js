@@ -33,7 +33,10 @@ function add() {
 function display(number){
 	var value = Math.round(number/cattlePrice); //Calculate value of input in terms of cattle rounded to the nearest integer
 
-	if((parseFloat(numOne.value) || 0) == 0 && (parseFloat(numTwo.value) || 0) == 0){return " ";} //Blank if no input
+	if((parseFloat(numOne.value) || 0) == 0 && (parseFloat(numTwo.value) || 0) == 0){ //Blank if no input
+		clear("cows");
+		return " ";
+	}
 	
  	else{
 		addCows(value);
