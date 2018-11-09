@@ -46,6 +46,11 @@ img.big-splash{
 	text-align: center;
 }
 
+.cowcontainer{
+	width: 500px;
+	height: auto;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
