@@ -37,7 +37,10 @@ function display(number){
 		clear("cows");
 		return " ";
 	}
-	
+	else if (value>10000){
+		clear("cows");
+		return "just stop it...";
+	}
  	else{
 		addCows(value);
 		return ("The current market value of cattle per head is $" + cattlePrice + ". Your value, " + number + ", is worth about " + value + " head(s) of cattle.");
