@@ -43,7 +43,7 @@ function display(number){
 
 //Clear an element
 function clear(elementId){
-	document.getElementById(elementID).innerHTML = "";
+	document.getElementById(elementId).innerHTML = "";
 }
 
 //Add appropriate amount of cow pictures underneath the text
