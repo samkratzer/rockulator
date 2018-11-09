@@ -19,6 +19,6 @@ function display(number){
 		return " ";
 	}
  	else return 
-	"The current market value of cattle per head is $" + cattlePrice + 
-	". Your value, " + number + ", is worth about " + value + " head(s) of cattle.";
+	("The current market value of cattle per head is $" + cattlePrice + 
+	". Your value, " + number + ", is worth about " + value + " head(s) of cattle.");
 }
