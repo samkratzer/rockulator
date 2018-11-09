@@ -3,6 +3,7 @@ var numOne = document.getElementById("num-one");
 var numTwo = document.getElementById("num-two");
 var addSum = document.getElementById("add-sum");
 var textField = document.getElementById("text-field");
+var cows = document.getElementById("cows");
 var url = "https://www.quandl.com/api/v3/datasets/ODA/PBEEF_USD/data.json?start_date=2017-01-01&column_index=1&collapse=annual&api_key=3xiT8B9xhdJEmqJLwTM_";
 var request = new XMLHttpRequest();
 var cattlePrice = 0;
@@ -34,6 +35,25 @@ function display(number){
 
 	if((parseFloat(numOne.value) || 0) == 0 && (parseFloat(numTwo.value) || 0) == 0){return " ";} //Blank if no input
 	
- 	else return ("The current market value of cattle per head is $" + cattlePrice + 
-	". Your value, " + number + ", is worth about " + value + " head(s) of cattle.");
+ 	else{
+		addCows(value);
+		return ("The current market value of cattle per head is $" + cattlePrice + ". Your value, " + number + ", is worth about " + value + " head(s) of cattle.");
+	}
+}
+
+//Clear an element
+function clear(elementId){
+	document.getElementById(elementID).innerHTML = "";
+}
+
+//Add appropriate amount of cow pictures underneath the text
+function addCows(number){
+	clear("cows");
+	console.log("cleared cows");
+	for (i=0; i<number; i++){
+		var elem = document.createElement("img");
+		elem.src = "media/cow-clipart-cow-clip-art-2.png";
+		document.getElementById("cows").appendChild(elem);
+	}
+	console.log("added cows");
 }
